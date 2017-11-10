@@ -4,10 +4,6 @@
         <div class="left">
             <div class="aside">
                 <h4>组件</h4>
-                <!-- <el-menu default-active="/activePublic" class="el-menu-vertical-demo" :router="true">
-                    <el-menu-item index="/activePublic" :class="{'isActive': active}">上传封面</el-menu-item>
-                    <el-menu-item index="/activeManage" :class="{'isActive': !active}">选择人员</el-menu-item>
-                </el-menu> -->
                 <ul class="side-nav">
                     <li class="nav-item"><router-link :to="{name:'component/uploadCover'}">封面上传</router-link></li>
                     <li class="nav-item"><router-link :to="{name:'component/assignDialog'}">部门，人员，标签选择</router-link></li>
@@ -35,7 +31,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style rel="stylesheet/scss" lang="scss">
     /* 主内容区 */
     .comMain{
         padding-top: 50px;
@@ -48,10 +44,13 @@ export default {
         width: 220px;
         padding-top: 50px;
         position: fixed;
-        overflow-y: scroll;
+        overflow-y: hidden;
         height:-moz-calc(100% - 150px); 
         height:-webkit-calc(100% - 150px); 
         height: calc(100% - 150px);
+    }
+    .aside:hover{
+        overflow-y: scroll;
     }
     .side-nav {
         height: 100%;
