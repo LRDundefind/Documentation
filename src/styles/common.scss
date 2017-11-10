@@ -1,0 +1,27 @@
+.pos-r{
+	position: relative;
+}
+.pos-a{
+	position: absolute;
+}
+.pos-f{
+	position: fixed;
+}
+.left{
+	left: 0;
+}
+.right{
+	right: 0;
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+.f-l{
+    float: left;
+}
+.f-r{
+    float: right;
+}
