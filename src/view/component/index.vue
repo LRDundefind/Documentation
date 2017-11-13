@@ -32,12 +32,25 @@ export default {
 
 <style rel="stylesheet/scss" lang="scss">
     /* 主内容区 */
+    .comMain h2, .comMain h3, .comMain h4, .comMain h5 {
+        font-weight: 400;
+        color: #1f2f3d;
+    }
+    .comMain h3 {
+        font-size: 22px;
+        margin: 55px 0 20px;
+    }
+    .comMain p {
+        font-size: 14px;
+        color: #5e6d82;
+        line-height: 1.5em;
+    }
     .comMain{
         padding-top: 50px;
-        padding-left: 240px;
-        width: -moz-calc(100% - 240px);
-        width: -webkit-calc(100% - 240px); 
-        width: -webkit-calc(100% - 240px);
+        padding-left: 250px;
+        width: -moz-calc(100% - 250px);
+        width: -webkit-calc(100% - 250px); 
+        width: -webkit-calc(100% - 250px);
     }
     .aside{
         width: 220px;
@@ -48,13 +61,16 @@ export default {
         height:-webkit-calc(100% - 150px); 
         height: calc(100% - 150px);
     }
+    .aside h4{
+        color: #333;
+        font-weight: 600;
+    }
     .aside:hover{
         overflow-y: scroll;
     }
     .side-nav {
         height: 100%;
         padding-left: 0;
-        padding-top: 20px;
         padding-bottom: 20px;
         padding-right: 0;
     }
@@ -63,7 +79,7 @@ export default {
     }
     .side-nav .nav-item a{
         margin: 0 20px;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 40px;
         text-decoration: none;
         position: relative;
