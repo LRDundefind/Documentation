@@ -1,4 +1,4 @@
-# my-project
+#  mxy_vue2_components
 
 > instructions text
 
@@ -6,16 +6,14 @@
 
 ``` bash
 # install dependencies
-npm install
+1.npm install -g cnpm --registry=https://registry.npm.taobao.org
 
-# serve with hot reload at localhost:8080
-npm run dev
+2.cnpm install
 
-# build for production with minification
-npm run build
+3.添加config文件夹(包含dev.env.js、index.js、prod.env.js)至项目根目录
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+4.cnpm install portfinder -s
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+5.package.json中将browserlist更新为browserslist
+
+6.npm run dev
