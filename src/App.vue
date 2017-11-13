@@ -97,6 +97,7 @@
     }
     ::-webkit-scrollbar-thumb {
         min-height: 20px;
+        border-radius: 5px;  
         background-clip: content-box;
         box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2) inset;
     }
@@ -108,7 +109,4 @@
         background-color: #F5F5F5;  
     }  
   
-
-
-
 </style>

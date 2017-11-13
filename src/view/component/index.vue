@@ -22,10 +22,9 @@
 
 <script>
 export default {
-    name: 'HelloWorld',
     data () {
         return {
-            active:true
+            
         }
     }
 }
