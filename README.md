@@ -16,4 +16,6 @@
 
 5.package.json中将browserlist更新为browserslist
 
-6.npm run dev
+6.elementUI更新版本:cnpm install element-ui@latest -S
+
+7.npm run dev
