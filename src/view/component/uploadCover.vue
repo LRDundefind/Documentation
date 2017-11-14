@@ -6,30 +6,30 @@
         <mobo-upload-cover ref="UploadCover" :remark="true" :remarkC="remarkC" :width="200" :height="100"></mobo-upload-cover>
         <h3>Attributes</h3>
         <el-table style="width: 100%" :data="AttributesData" border>
-              <el-table-column
+            <el-table-column
                 label="参数"
                 prop="parameter"
                 width="150">
-              </el-table-column>
-              <el-table-column
+            </el-table-column>
+            <el-table-column
                 label="说明"
                 width="150"
                 prop="explain">
-              </el-table-column>
-              <el-table-column
+            </el-table-column>
+            <el-table-column
                 label="类型"
                 width="150"
                 prop="type">
-              </el-table-column>
-              <el-table-column
+            </el-table-column>
+            <el-table-column
                 label="可选值"
                 width="150"
                 prop="option">
-              </el-table-column>
-              <el-table-column
+            </el-table-column>
+            <el-table-column
                 label="默认值"
                 prop="default">
-              </el-table-column>
+            </el-table-column>
         </el-table>
         <h3>Methods</h3>
         <el-table style="width: 100%" :data="MethodsData" border>

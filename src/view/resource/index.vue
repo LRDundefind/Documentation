@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h3>布局容器</h3>
-    <el-container style="height: 500px; border: 1px solid #eee">
+    <el-container :style="{height: clientHeight + 'px'}">
       <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
         <el-menu :default-openeds="['1', '3']">
           <el-submenu index="1">
@@ -78,9 +78,16 @@ export default {
         address: '上海市普陀区金沙江路 1518 弄'
     };
     return {
+      clientHeight:document.documentElement.clientHeight-200,
       tableData: Array(20).fill(item),
       msg: 'developing...'
     }
+  },
+  mounted(){
+      const that = this;
+      window.onresize = function temp() {
+          that.clientHeight = `${document.documentElement.clientHeight}`-200;
+      };
   }
 }
 </script>
