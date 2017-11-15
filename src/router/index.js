@@ -1,21 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import guide from '@/view/guide/index'
-import component from '@/view/component/index'
-import resource from '@/view/resource/index'
-import uploadCover from '@/view/component/uploadCover'
-import assignDialog from '@/view/component/assignDialog'
+import guide from '@/view/guide/index'  //指南
+import component from '@/view/component/index'  //组件
+import resource from '@/view/resource/index'  //资源
+import uploadCover from '@/view/component/uploadCover'  //上传封面组件
+import assignDialog from '@/view/component/assignDialog'  //选择人员，部门，标签组件
 
 
 Vue.use(Router)
 
 export default new Router({
   	routes: [
-  		{
-	      	path: '/',
-	      	name: 'guide',
-	      	component: guide
-	    },
+  	
 	    {
 	      	path: '/guide',
 	      	name: 'guide',
