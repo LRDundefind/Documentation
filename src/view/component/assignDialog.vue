@@ -5,7 +5,7 @@
         <h3>基础用法</h3>
         <p>这里是demo</p>
         <h3>Attributes</h3>
-        <el-table style="width: 100%" :data="AttributesData" border>
+        <el-table style="width: 100%" :data="AttributesData">
               <el-table-column
                 label="参数"
                 prop="parameter"
@@ -32,7 +32,7 @@
               </el-table-column>
         </el-table>
         <h3>Methods</h3>
-        <el-table style="width: 100%" :data="MethodsData"  border>
+        <el-table style="width: 100%" :data="MethodsData">
             <el-table-column
                 label="方法名"
                 prop="parameter"
@@ -48,7 +48,7 @@
             </el-table-column>
         </el-table>
         <h3>Events</h3>
-        <el-table style="width: 100%" :data="EventsData" border>
+        <el-table style="width: 100%" :data="EventsData">
             <el-table-column
                 label="事件名称"
                 prop="parameter"

@@ -41,6 +41,7 @@
         },
         created() {
             require('@/styles/common.scss');
+            this.$router.push('/guide')
         },
     }
 </script>
