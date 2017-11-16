@@ -10,7 +10,7 @@
 
 2.cnpm install
 
-3.添加config文件夹(包含dev.env.js、index.js、prod.env.js)至项目根目录
+3.复制config.example将其更名为config
 
 4.cnpm install portfinder -s
 
