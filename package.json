@@ -1,13 +1,14 @@
 {
-  "name": "vue-admin-moxueyuan",
+   "name": "my-project",
   "version": "1.0.0",
   "license": "private",
   "private": true,
   "description": "A vue admin moxueyuan with Element UI & axios & iconfont & permission control & lint",
-  "author": "xiongyouliang <xiongyouliang@chinamobo.com>",
+  "author": "liruidong <liruidong@286182399@qq.com>",
   "Homepage": "www.moxueyuan.com",
   "scripts": {
     "dev": "node build/dev-server.js",
+    "build": "node build/build.js",
     "build:prod": "cross-env NODE_ENV=production node build/build.js",
     "build:sit": "cross-env NODE_ENV=sit node build/build.js",
     "build:sit-preview": "cross-env NODE_ENV=sit npm_config_preview=true  npm_config_report=true node build/build.js",

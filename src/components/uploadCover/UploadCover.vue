@@ -58,12 +58,12 @@
         data () {
             return {
                 imgList: [
-                    '/static/coverImg/default_1.jpg',
-                    '/static/coverImg/default_2.jpg',
-                    '/static/coverImg/default_3.jpg',
-                    '/static/coverImg/default_4.jpg',
-                    '/static/coverImg/default_5.jpg',
-                    '/static/coverImg/default_6.jpg'
+                    'static/coverImg/default_1.jpg',
+                    'static/coverImg/default_2.jpg',
+                    'static/coverImg/default_3.jpg',
+                    'static/coverImg/default_4.jpg',
+                    'static/coverImg/default_5.jpg',
+                    'static/coverImg/default_6.jpg'
                 ],  //封面图片列表
                 image: '',    //封面图片地址
                 shufflingId: '0',  //当前封面封面标志
