@@ -14,8 +14,14 @@
                 </div>
             </div>
             <div class="f-l pos-r btnBox" :style="{height: height + 'px'}">
-                <el-upload class="coverImgUpload pos-a" :action="uploadUrl" :show-file-list="false" :before-upload="beforeUpload" :on-success="handleUploaCoverdSuccess">
+                <!-- <el-upload class="coverImgUpload pos-a" :action="uploadUrl" :show-file-list="false" :before-upload="beforeUpload" :on-success="handleUploaCoverdSuccess">
                     <el-button size="small" type="primary" v-loading.fullscreen.lock="fullscreenLoading">上传图片</el-button>
+                </el-upload> -->
+                <el-upload
+                  class="coverImgUpload pos-a"
+                  action="https://jsonplaceholder.typicode.com/posts/" :show-file-list="false"
+                  :before-upload="beforeUpload" :on-success="handleUploaCoverdSuccess">
+                  <el-button size="small" type="primary" v-loading.fullscreen.lock="fullscreenLoading">点击上传</el-button>
                 </el-upload>
             </div>
         </div>
@@ -67,7 +73,7 @@
                 ],  //封面图片列表
                 image: '',    //封面图片地址
                 shufflingId: '0',  //当前封面封面标志
-                uploadUrl: process.env.BASE_API + '/uploadify/upload',  //上传图片路径
+                uploadUrl: 'https://jsonplaceholder.typicode.com/posts/',//process.env.BASE_API + '/uploadify/upload',  //上传图片路径
                 fullscreenLoading: false  //加载中遮罩
                 //options: {}
             }
@@ -118,7 +124,8 @@
             },
             //上传封面图片
             handleUploaCoverdSuccess(response, file) {
-                this.imgList.unshift(this.imgPath() + response.url.substring(3, response.url.length));
+                this.imgList.unshift(file.url);
+                //this.imgList.unshift(this.imgPath() + response.url.substring(3, response.url.length));
                 this.shufflingId = 0;
                 this.image = this.imgList[this.shufflingId];
                 this.fullscreenLoading = false;
