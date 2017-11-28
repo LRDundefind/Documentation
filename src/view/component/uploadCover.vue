@@ -142,7 +142,7 @@
             }
         },
         created() {
-            //hljs.highlightCode()
+            
         },
         components: {MoboUploadCover},
         methods: {

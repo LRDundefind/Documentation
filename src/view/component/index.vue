@@ -5,8 +5,8 @@
             <div class="aside">
                 <h4>组件</h4>
                 <ul class="side-nav">
-                    <li class="nav-item"><router-link :to="{name:'component/uploadCover'}">封面上传</router-link></li>
-                    <li class="nav-item"><router-link :to="{name:'component/assignDialog'}">部门，人员，标签选择</router-link></li>
+                    <li class="nav-item"><router-link :to="'/component/uploadCover'">封面上传</router-link></li>
+                    <li class="nav-item"><router-link :to="'/component/assignDialog'">部门，人员，标签选择</router-link></li>
                 </ul>
             </div>  
         </div>
