@@ -25,3 +25,12 @@
 .f-r{
     float: right;
 }
+pre{
+    line-height: 24px;
+    font-size: 16px;
+    color: #333;
+}
+pre code{
+    font-family: Menlo,Monaco,Consolas,Courier,monospace;
+    font-size:14px;
+}

@@ -16,28 +16,28 @@
                             <li>components: {MoboUploadCover} 注册组件</li>
                         </ul>
                         
-            <pre>
-                <code>
-            &lt;mobo-upload-cover      
-                ref="UploadCover"
-                :remark="true" 
-                :remarkC="remarkC" 
-                :width="200" 
-                :height="100">
-            &lt;/mobo-upload-cover>
-            &lt;script>
-            import MoboUploadCover from '@/components/uploadCover/UploadCover';
-            export default {
-                data () {
-                    return {
-                        remarkC:"这里是自定义内容"
-                    }
-                },
-                components: { MoboUploadCover }
-            }
-            &lt;/script>
-                </code>
-            </pre>
+                <pre>
+                    <code>
+                &lt;mobo-upload-cover      
+                    ref="UploadCover"
+                    :remark="true" 
+                    :remarkC="remarkC" 
+                    :width="200" 
+                    :height="100">
+                &lt;/mobo-upload-cover>
+                &lt;script>
+                import MoboUploadCover from "@/components/uploadCover/UploadCover";
+                export default {
+                    data () {
+                        return {
+                            remarkC:"这里是自定义内容"
+                        }
+                    },
+                    components: { MoboUploadCover }
+                }
+                &lt;/script>
+                    </code>
+                </pre>
                     </div>
                 </el-collapse-transition>
             </div>
@@ -105,15 +105,12 @@
 <script>
     import Vue from 'vue';
     import MoboUploadCover from '@/components/uploadCover/UploadCover';
-    //代码高亮显示
-    
-    console.log(MoboUploadCover);
     export default {
 
         data () {
             return {
                 remarkC:"这里是自定义内容",
-                show: true,
+                show: false,
                 AttributesData:[{
                     parameter:'remark',
                     explain:'是否显示提示说明',
@@ -176,10 +173,5 @@
     border: 1px solid #ebebeb;
     padding: 20px 40px;
 }
-pre{
-    line-height: 24px;
-    font-size: 16px;
-    color: #333;
 
-}
 </style>
