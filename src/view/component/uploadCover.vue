@@ -3,7 +3,7 @@
         <h2>封面上传</h2>
         <p>从接口返回固定的几张封面图片，可以左右切换，也可以上传封面( 访问接口需要登录权限 )。</p>
         <h3>基础用法</h3>
-        <div class="main">
+        <div class="component">
             <mobo-upload-cover ref="UploadCover" :remark="true" :remarkC="remarkC" :width="200" :height="100"></mobo-upload-cover>
         </div>   
             <div class="code" v-highlight>
@@ -105,6 +105,7 @@
 <script>
     import Vue from 'vue';
     import MoboUploadCover from '@/components/uploadCover/UploadCover';
+    import '@/styles/components.scss'
     export default {
 
         data () {
@@ -149,29 +150,3 @@
         }
     }
 </script>
-<style rel="stylesheet/scss" lang="scss">
-.main{
-    border: 1px solid #ebebeb;
-    padding: 20px;
-}
-.code{
-    background: #fafafa;
-    padding: 20px;
-    border: 1px solid #ebebeb;
-}
-.lookCode{
-    cursor: pointer;
-    font-size: 12px;
-}
-.lookCode:hover{
-    color: #409EFF;
-}
-.code ul{
-    margin-top: 20px;
-
-    background: #fff;
-    border: 1px solid #ebebeb;
-    padding: 20px 40px;
-}
-
-</style>

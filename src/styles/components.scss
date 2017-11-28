@@ -1,0 +1,23 @@
+.component{
+    border: 1px solid #ebebeb;
+    padding: 20px;
+}
+.code{
+    background: #fafafa;
+    padding: 20px;
+    border: 1px solid #ebebeb;
+}
+.lookCode{
+    cursor: pointer;
+    font-size: 12px;
+}
+.lookCode:hover{
+    color: #409EFF;
+}
+.code ul{
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    padding: 20px 40px;
+    font-size: 14px;
+}
