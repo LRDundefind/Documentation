@@ -17,18 +17,21 @@
             
             <div class="page-container">
                 <router-view>
-                    
                 </router-view>
                 
             </div>
         </main>
      </div>
 </template>
-
 <script>
     import Vue from 'vue'
     import Element from 'element-ui'
     import 'element-ui/lib/theme-chalk/index.css'
+    // fade/zoom 等
+    import 'element-ui/lib/theme-chalk/base.css';
+    // collapse 展开折叠
+    import CollapseTransition from 'element-ui/lib/transitions/collapse-transition';
+    
 
     Vue.use(Element)
 
@@ -41,7 +44,6 @@
         },
         created() {
             require('@/styles/common.scss');
-            this.$router.push('/guide')
         },
     }
 </script>

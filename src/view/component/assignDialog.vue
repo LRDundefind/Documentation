@@ -67,12 +67,11 @@
 </template>
 <script>
 
-    import MoboUploadCover from '@/components/uploadCover/UploadCover';
     export default {
 
         data () {
             return {
-                remarkC:"这里是自定义内容",
+
                 AttributesData:[],
                 MethodsData:[],
                 EventsData:[]
@@ -81,7 +80,6 @@
         created() {
             
         },
-        components: {MoboUploadCover},
         methods: {
 
         }

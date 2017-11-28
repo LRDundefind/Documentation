@@ -3,7 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+//import hljs from 'highlight';
+// //import 'highlight/lib/vendor/highlight.js/style/default.css';
+// Vue.directive('highlight',function (el) {
+//     let blocks = el.querySelectorAll('pre code');
+//     blocks.forEach((block)=>{
+//         hljs.highlightBlock(block)
+//     })
+// })
+//console.log(fs);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
