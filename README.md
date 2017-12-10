@@ -6,16 +6,11 @@
 
 ``` bash
 # install dependencies
-1.npm install -g cnpm --registry=https://registry.npm.taobao.org
+1.npm install 
 
-2.cnpm install
+2.复制config.example将其更名为config
 
-3.复制config.example将其更名为config
+3.npm run dev
 
-4.cnpm install portfinder -s
-
-5.package.json中将browserlist更新为browserslist
-
-6.elementUI更新版本:cnpm install element-ui@latest -S
-
-7.npm run dev
+#打包
+4.npm run build
